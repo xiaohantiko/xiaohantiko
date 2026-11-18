@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="736" height="302" viewBox="0 0 736 302" role="img" aria-labelledby="title desc">
+  <title id="title">xiaohantiko's GitHub Stats</title>
+  <desc id="desc">Total Stars Earned: 0; Total Commits (last year): 34; Total PRs: 2; Total Issues: 1; Contributed to (last year): 10. Public activity only. Stars on owned non-fork repositories. Repositories with commit, issue, pull request or review contributions in the last year. Grade C uses the unofficial GitHub Readme Stats formula. Updated 2026-11-18 UTC.</desc>
+  <style>
+    svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .panel { fill: #fff; stroke: #d8dee4; }
+    text { fill: #424d5b; font-size: 22px; font-weight: 600; }
+    .heading { fill: #0969da; font-size: 31px; font-weight: 650; }
+    .icon { fill: none; stroke: #0879e8; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+    .track { stroke: #d1e1fa; } .arc { stroke: #3d88e9; }
+    .grade { font-size: 41px; font-weight: 650; }
+    .note { fill: #576574; font-size: 12px; font-weight: 400; }
+    @media (prefers-color-scheme: dark) {
+      .panel { fill: #0d1117; stroke: #30363d; } text { fill: #d7dfe9; }
+      .heading { fill: #62aaff; } .icon, .arc { stroke: #58a6ff; }
+      .track { stroke: #24384e; } .note { fill: #9caab9; }
+    }
+  </style>
+  <rect class="panel" x=".5" y=".5" width="735" height="301" rx="12"/>
+  <text class="heading" x="28" y="49">xiaohantiko's GitHub Stats</text>
+  <g transform="translate(28 76)" class="icon"><path d="m12 2.2 3 6.1 6.7 1-4.85 4.7 1.15 6.7-6-3.15-6 3.15 1.15-6.7-4.85-4.7 6.7-1z"/></g>
+  <text x="69" y="94">Total Stars Earned:</text>
+  <text x="401" y="94">0</text>
+  <g transform="translate(28 116)" class="icon"><path d="M3.4 10a8.7 8.7 0 1 1 .7 6.1M3 4.8V10h5.2M12 7v5l3.2 2"/></g>
+  <text x="69" y="134">Total Commits (last year):</text>
+  <text x="401" y="134">34</text>
+  <g transform="translate(28 156)" class="icon"><circle cx="6" cy="5" r="2.2"/><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="19" r="2.2"/><path d="M6 7.2v9.6M18 16.8v-6A5.8 5.8 0 0 0 12.2 5H12m2.4-2.5L12 5l2.4 2.5"/></g>
+  <text x="69" y="174">Total PRs:</text>
+  <text x="401" y="174">2</text>
+  <g transform="translate(28 196)" class="icon"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.8m0 3h.01"/></g>
+  <text x="69" y="214">Total Issues:</text>
+  <text x="401" y="214">1</text>
+  <g transform="translate(28 236)" class="icon"><path d="M5 4.3A1.8 1.8 0 0 1 6.8 2.5h12.7v16H7a2 2 0 0 1 0-4h12.5M5 4.3v12.2m3 2.2v3l2-1.2 2 1.2v-3"/></g>
+  <text x="69" y="254">Contributed to (last year):</text>
+  <text x="401" y="254">10</text>
+  <g fill="none" stroke-width="9">
+    <circle class="track" cx="611" cy="166" r="62"/>
+    <circle class="arc" cx="611" cy="166" r="62" stroke-dasharray="12.34 389.56" stroke-linecap="round" transform="rotate(-90 611 166)"/>
+  </g>
+  <text class="grade" x="611" y="180" text-anchor="middle">C</text>
+  <text class="note" x="28" y="283">Public activity · 2026-11-18 UTC</text>
+  <text class="note" x="709" y="283" text-anchor="end">Unofficial GitHub Readme Stats grade</text>
+</svg>
