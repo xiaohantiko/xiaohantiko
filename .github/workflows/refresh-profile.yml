@@ -1,0 +1,50 @@
+name: Refresh profile graphics
+
+on:
+  schedule:
+    # 08:17 in Asia/Shanghai.
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-profile-graphics
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generate the light and dark contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/contribution-snake.svg
+            assets/contribution-snake-dark.svg?palette=github-dark&color_snake=#ba9bff
+
+      - name: Generate the statistics card
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/generate_stats.py
+
+      - name: Publish updated graphics
+        run: |
+          git add -- assets/contribution-snake.svg assets/contribution-snake-dark.svg assets/github-stats.svg
+          if git diff --cached --quiet; then
+            echo "The profile graphics are already current."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh profile graphics'
+          git pull --rebase
+          git push
