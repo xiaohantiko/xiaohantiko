@@ -9,6 +9,8 @@ let han = (
 )
 ```
 
+以前、日本で学校に通っていました。今は、その頃に学んだ日本語を少しずつ復習したいと思っています。
+
 ソフトを使っているときの、ほんの数秒にこだわるのが好きです。たとえば、Codex を開く前に流れる短いアニメーションを作りました。壁紙も字幕も好きなものに変えられます。急いでいるときは Esc キーひとつで飛ばせます。[Codex Startup for macOS](https://github.com/xiaohantiko/codex-startup-showcase)
 
 <picture>
